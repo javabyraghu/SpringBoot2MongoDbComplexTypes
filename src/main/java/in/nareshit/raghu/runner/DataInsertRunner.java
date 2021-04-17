@@ -6,6 +6,7 @@ import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import in.nareshit.raghu.model.Address;
@@ -16,6 +17,7 @@ import in.nareshit.raghu.repo.DeptRepository;
 import in.nareshit.raghu.repo.EmployeeRepository;
 
 @Component
+@Order(1)
 public class DataInsertRunner implements CommandLineRunner {
 
 	@Autowired
